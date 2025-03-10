@@ -1,0 +1,14 @@
+2025-03-04 09:19:15,028 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/im8/fastapi_app/venv/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-04 09:19:15,973 - INFO - User test@gmail.com created successfully.
+2025-03-04 09:19:34,570 - INFO - User test@gmail.com logged in successfully.
+2025-03-04 09:26:06,997 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/im8/fastapi_app/venv/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-04 09:26:07,990 - INFO - User test@gmail.com logged in successfully.
+2025-03-04 09:26:57,075 - INFO - User test@gmail.com retrieved all users.

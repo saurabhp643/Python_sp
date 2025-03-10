@@ -1,0 +1,20 @@
+syntax = "proto3";  // ✅ Defines we are using Protocol Buffers version 3
+
+package user;  // ✅ Namespace to avoid conflicts
+
+// Define the gRPC Service
+service UserService {
+    rpc GetUser (UserRequest) returns (UserResponse);
+}
+
+// ✅ Request message with a single field: user_id
+message UserRequest {
+    int32 user_id = 1;
+}
+
+// ✅ Response message with user details
+message UserResponse {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+}
